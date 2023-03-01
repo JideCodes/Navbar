@@ -1,0 +1,125 @@
+body {
+  font-family: 'Satoshi';
+  margin-left: 3rem;
+  margin-right: 3rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header {
+  background-color: #f8f8f880;
+  border-radius: 10px;
+  padding: 5px 20px;
+  -webkit-box-shadow: 1px 3px 30px #11325520;
+          box-shadow: 1px 3px 30px #11325520;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+header nav #logo {
+  color: #2bc48a;
+}
+
+header nav ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+  height: 100%;
+  margin: 0;
+}
+
+header nav ul li {
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  height: 100%;
+  width: 70px;
+  text-align: center;
+  line-height: 3;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header nav ul li:hover {
+  font-weight: 700;
+  color: #2bc48a;
+}
+
+header nav ul li:hover .dot {
+  background-color: #2bc48a;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header nav ul li:hover .drop-down {
+  padding: 10px 20px;
+}
+
+header nav .btn-containers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+
+header nav .btn-containers #sc-btn {
+  height: 48px;
+  width: 110px;
+  background-color: white;
+  color: #113255;
+  border: solid 1px #d5e5f7;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+header nav .btn-containers #sc-btn:hover {
+  background-color: #f2fcf8;
+  border: solid 1px #113255;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header nav .btn-containers #pr-btn {
+  height: 48px;
+  width: 110px;
+  background-color: #113255;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+header nav .btn-containers #pr-btn:hover {
+  background-color: #09192b;
+  outline: solid 3px #aacbee;
+  outline-offset: 3px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/*# sourceMappingURL=style.css.map */

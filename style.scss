@@ -1,0 +1,115 @@
+body{
+    font-family: 'Satoshi';
+    margin-left: 3rem;
+    margin-right: 3rem;
+    transition: all 0.5s ease;
+}
+$primary: #113255;
+$accent: #2bc48a;
+
+@mixin pr-btn{
+    height: 48px;
+    width: 110px;
+    background-color: $primary;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    &:hover{
+        background-color: darken($primary, 10%);
+        outline: solid 3px lighten($primary, 60%);
+        outline-offset: 3px;
+        transition: all 0.5s ease;
+    }
+}
+
+@mixin sc-btn{
+    height: 48px;
+    width: 110px;
+    background-color: white;
+    color: $primary;
+    border: solid 1px lighten($primary, 70%);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    &:hover{
+        background-color: lighten($accent, 50%);
+        border: solid 1px $primary;
+        transition: all 0.5s ease;
+    }
+}
+
+
+header{
+    background-color: #f8f8f880;
+    border-radius: 10px;
+    padding: 5px 20px;
+    box-shadow: 1px 3px 30px #11325520;
+    
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        #logo{
+            color: $accent;
+        }
+
+        ul {
+            display: inline-flex;
+            list-style: none;
+            height: 100%;
+            margin: 0;
+
+            li {
+                margin-left: 20px;
+                font-size: 14px;
+                font-weight: 400;                
+                height: 100%;
+                width: 70px;
+                text-align: center;            
+                line-height: 3;
+                position: relative;
+                cursor: pointer;
+                transition: all 0.5s ease;
+                }
+            li:hover{
+                font-weight: 700;
+                color: $accent;                
+                .dot {
+                    background-color: $accent;
+                    height: 3px;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    transition: all 0.5s ease;              
+                    }
+                .drop-down{
+                    padding: 10px 20px;
+                    
+                }   
+
+                    }
+            
+            }
+        .btn-containers{
+            display: flex;
+            gap: 24px;
+            
+            #sc-btn{
+                @include sc-btn();
+            }
+            #pr-btn{
+                @include pr-btn();
+            }
+            
+        }
+        }
+}
